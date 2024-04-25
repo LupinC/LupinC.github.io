@@ -1,17 +1,24 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+@font-face {
+    font-family: Pixel;
+    src: url('pixelfont.TTF') format('truetype');
+  }
 
 body {
-    font-family: 'Press Start 2P', monospace;
-    color: #fff;
+    font-family: "Press Start 2P", monospace;
+    color: #EAE075;
     background-color: #000;
     margin: 0;
     padding: 0;
   }
 
-  h1.web-designer {
+  /* h1.web-designer {
     color: #EAE075;
     font-family: 'Courier New', monospace;
-  }
+  } */
   
   nav {
     background-color: #333;
