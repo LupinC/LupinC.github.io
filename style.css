@@ -7,6 +7,11 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  h1.web-designer {
+    color: #EAE075;
+    font-family: 'Courier New', monospace;
+  }
   
   nav {
     background-color: #333;
