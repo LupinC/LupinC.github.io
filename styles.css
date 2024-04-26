@@ -3,7 +3,7 @@
 
 
 @font-face {
-    font-family: Pixel;
+    font-family: "Pixel";
     src: url('pixelfont.TTF') format('truetype');
   }
 
@@ -13,13 +13,93 @@ body {
     background-color: #000;
     margin: 0;
     padding: 0;
+    text-align: center;
   }
 
-  /* h1.web-designer {
-    color: #EAE075;
-    font-family: 'Courier New', monospace;
-  } */
-  
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    color:#fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.ret {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: space-around; /* Spreads the items evenly with space around them */
+  padding: 20px;
+}
+
+.portfolio-item .item {
+  flex-basis: 22%; /* Slightly less than 25% to allow for spacing */
+  text-align: center; /* Centers the text below the image */
+  margin: 10px; /* Adds space between the items */
+}
+
+.portfolio-item .item img {
+  width: 100%; /* Makes the image fill the container */
+  height: auto; /* Keeps the image aspect ratio intact */
+  margin-bottom: 10px; /* Space between the image and the text */
+}
+
+#about {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color */
+  font-family: 'Press Start 2P', monospace; /* Pixelated font */
+  text-align: center; /* Center-align the text */
+  padding: 20px; /* Padding inside the section */
+}
+
+#about h2 {
+  color: #33C3F0; /* Light blue color */
+}
+
+.about-content {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between the text blocks */
+  margin: 20px 0; /* Margin around the content */
+}
+
+.about-content .text {
+  flex: 1; /* Flex grow to fill the space */
+  margin: 0 10px; /* Margin for spacing */
+  color: #EAE075; /* Yellowish text color */
+  background-color: #222; /* Dark background for text */
+  padding: 10px; /* Padding inside text blocks */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.about-content .text.left {
+  text-align: left; /* Align left text to the left */
+}
+
+.about-content .text.right {
+  text-align: right; /* Align right text to the right */
+}
+
+#about .button {
+  display: block; /* Block display to fill the width */
+  width: max-content; /* Max content for intrinsic width */
+  margin: 10px auto; /* Center the button horizontally */
+  background-color: #cd03ff; 
+  color: #fff;
+  border: none;
+  padding: 10px;
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer;
+}
+
+#about .button:hover {
+  background-color: #0056b3; /* Darken button on hover */
+}
+
+
   nav {
     background-color: #333;
     padding: 10px 0;
@@ -54,6 +134,7 @@ body {
   
   button {
     background-color: #0066cc; 
+    font-family: 'Courier New', Courier, monospace;
     color: #fff;
     border: none;
     padding: 10px;
@@ -76,6 +157,15 @@ body {
   
     h1, h2 {
       font-size: 20px;
+    }
+
+    .portfolio-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .portfolio-item .item {
+        flex-basis: 80%; /* Takes more space for better readability on small screens */
     }
   }
   
