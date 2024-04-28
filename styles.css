@@ -21,7 +21,59 @@ body {
     color:#fff;
     text-align: center;
     font-size: 18px;
+    margin: 20px;
 }
+
+/* porfolio section */
+
+.flex-container {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top of the container */
+    justify-content:space-around /* Spreads the items across the horizontal space of the container */
+}
+
+.flex-container-reverse {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.image-container {
+    flex: 2; /* Takes up 1 portion of the available space */
+    align-self: center;
+    margin-right: -10%;
+}
+
+.text-container {
+    flex: 1; /* Takes up 2 portions of the available space, making it larger than the image container */
+    padding: 20px; /* Adds padding inside the text container */
+    margin-left: 0px;
+    margin-right: 80px;
+}
+
+.flex-container-reverse {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.image-container-reverse {
+  flex: 2; /* Takes up 1 portion of the available space */
+  align-self: center;
+  margin-right: -10%;
+  margin-left: 0px;
+}
+
+.text-container-reverse {
+  flex: 1; /* Takes up 2 portions of the available space, making it larger than the image container */
+  padding: 20px; /* Adds padding inside the text container */
+  align-self: center;
+  margin-left: 10%;
+  margin-right: -10%;
+}
+
+
+
 
 .center {
   display: block;
@@ -42,14 +94,19 @@ body {
 .portfolio-item {
   display: flex;
   flex-wrap: wrap; /* Allows items to wrap onto the next line */
-  justify-content: space-around; /* Spreads the items evenly with space around them */
+  justify-content: space-between; /* Ensures that items are spaced evenly */
   padding: 20px;
+  align-items: stretch; /* Makes sure all items stretch to fill the container */
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .portfolio-item .item {
-  flex-basis: 22%; /* Slightly less than 25% to allow for spacing */
+  flex: 1 1 48%; /* Allows the item to grow and shrink but base it on 48% of the container */
   text-align: center; /* Centers the text below the image */
-  margin: 10px; /* Adds space between the items */
+  margin: 1%; /* Adds space around each item */
+  display: flex;
+  flex-direction: column; /* Organizes content in a vertical layout */
 }
 
 .portfolio-item .item img {
@@ -57,6 +114,12 @@ body {
   height: auto; /* Keeps the image aspect ratio intact */
   margin-bottom: 10px; /* Space between the image and the text */
 }
+
+.portfolio-item .item p {
+  margin-top: auto; /* Pushes the text to the bottom if there's space available */
+  text-align: center; /* Center-aligns the text */
+}
+
 
 #about {
   background-color: #000; /* Black background */
