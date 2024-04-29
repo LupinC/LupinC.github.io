@@ -273,16 +273,6 @@ img {
     text-align: center;
   }
   
-  button {
-    background-color: #0066cc; 
-    font-family: 'Courier New', Courier, monospace;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 10px;
-  }
   
   footer {
     text-align: center;
