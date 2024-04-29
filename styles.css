@@ -14,6 +14,8 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
 .text {
@@ -242,24 +244,38 @@ body {
   }
  
   @media (max-width: 768px) {
+    body, .text {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 16px;
+    }
+  
     nav ul li {
-      display: block;
-      margin: 10px 0;
+        display: block;
+        margin: 10px 0;
     }
   
     h1, h2 {
-      font-size: 20px;
+        font-size: 20px;
     }
 
     .portfolio-item {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
     }
   
     .portfolio-item .item {
-        flex-basis: 80%; /* Takes more space for better readability on small screens */
+        flex-basis: 100%;
     }
-  }
+
+    .about-content, .about-content .text {
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+    }
+}
   
 
   
