@@ -7,6 +7,12 @@
     src: url('pixelfont.TTF') format('truetype');
   }
 
+.avatar{
+  max-width: 30px; 
+  height: auto; 
+  margin-left: 50%;   
+}
+
 body {
     font-family: "Press Start 2P", monospace;
     color: #EAE075;
@@ -230,19 +236,7 @@ img {
   cursor: pointer;
 }
 
-#about .button {
-  display: block;
-  width: max-content;
-  margin: 10px auto;
-  background-color: #cd03ff; 
-  color: #fff;
-  border: none;
-  padding: 10px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#about .button:hover {
+.button:hover {
   background-color: #0056b3; 
 }
 
