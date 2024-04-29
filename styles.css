@@ -44,6 +44,12 @@ body {
     margin-right: -10%;
 }
 
+.image-container-special {
+  flex: 0.8; /* Takes up 1 portion of the available space */
+  align-self: center;
+  margin-right: -10%;
+}
+
 .text-container {
     flex: 1; /* Takes up 2 portions of the available space, making it larger than the image container */
     padding: 20px; /* Adds padding inside the text container */
@@ -155,6 +161,18 @@ body {
 
 .about-content .text.right {
   text-align: center; /* Align right text to the right */
+}
+
+.button {
+  display: block; /* Block display to fill the width */
+  width: max-content; /* Max content for intrinsic width */
+  margin: 10px auto; /* Center the button horizontally */
+  background-color: #cd03ff; 
+  color: #fff;
+  border: none;
+  padding: 10px;
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer;
 }
 
 #about .button {
