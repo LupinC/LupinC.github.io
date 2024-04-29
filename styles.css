@@ -27,10 +27,66 @@ body {
 }
 
 
+/* about me section */
+.special-imaget {
+  width: 25%; /* Adjust the width as needed */
+  height: auto; /* This ensures the aspect ratio is maintained */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Centers the image if needed */
+}
+
+/* design manifesto & design questions*/
+
+.question{
+  font-family: 'Courier New', Courier, monospace;
+  color: #EAE075;
+  text-align: left;
+  font-size: 18px;
+  margin: 20px;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-left: 10%;
+}
+.text-special {
+  font-family: 'Courier New', Courier, monospace;
+  color:#fff;
+  text-align: left;
+  font-size: 18px;
+  margin: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.questiont{
+  font-family: 'Courier New', Courier, monospace;
+  color: #EAE075;
+  text-align: left;
+  font-size: 18px;
+  margin-left: 10%;
+}
+.text-specialt {
+  font-family: 'Courier New', Courier, monospace;
+  color:#fff;
+  text-align: left;
+  font-size: 18px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
 img {
   max-width: 100%; /* ensures images are never wider than their container */
   height: auto;    /* maintains the aspect ratio of the images */
   display: block;  /* removes additional space below the image */
+}
+
+.special-image {
+  width: 50%; /* Adjust the width as needed */
+  height: auto; /* This ensures the aspect ratio is maintained */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Centers the image if needed */
 }
 
 /* porfolio section */
@@ -297,6 +353,10 @@ img {
       margin-left: 0;
       margin-right: 0;
       align-self: center;     /* Center align self for consistent layout */
+  }
+
+  .special-image {
+    width: 75%; /* Larger or smaller depending on your design needs */
   }
 }
   
