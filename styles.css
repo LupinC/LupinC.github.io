@@ -26,6 +26,13 @@ body {
     margin: 20px;
 }
 
+
+img {
+  max-width: 100%; /* ensures images are never wider than their container */
+  height: auto;    /* maintains the aspect ratio of the images */
+  display: block;  /* removes additional space below the image */
+}
+
 /* porfolio section */
 
 .flex-container {
@@ -34,29 +41,22 @@ body {
     justify-content:space-around /* Spreads the items across the horizontal space of the container */
 }
 
-.flex-container-reverse {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row-reverse;
-}
 
 .image-container {
     flex: 2; /* Takes up 1 portion of the available space */
     align-self: center;
-    margin-right: -10%;
+
 }
 
 .image-container-special {
   flex: 0.8; /* Takes up 1 portion of the available space */
   align-self: center;
-  margin-right: -10%;
 }
 
 .text-container {
     flex: 1; /* Takes up 2 portions of the available space, making it larger than the image container */
     padding: 20px; /* Adds padding inside the text container */
-    margin-left: 0px;
-    margin-right: 80px;
+    margin-left: 100px;
 }
 
 .flex-container-reverse {
@@ -76,8 +76,6 @@ body {
   flex: 1; /* Takes up 2 portions of the available space, making it larger than the image container */
   padding: 20px; /* Adds padding inside the text container */
   align-self: center;
-  margin-left: 10%;
-  margin-right: -10%;
 }
 
 
@@ -87,7 +85,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
 .ret {
@@ -244,6 +241,10 @@ body {
   }
  
   @media (max-width: 768px) {
+    img {
+      width: 100%; /* makes every image take full width of its container on small screens */
+    }
+
     body, .text {
         margin-left: 5%;
         margin-right: 5%;
@@ -275,6 +276,28 @@ body {
         justify-content: center;
         margin: 20px;
     }
+
+    .flex-container, .flex-container-reverse {
+      flex-direction: column;  /* Stack the flex items vertically on smaller screens */
+      align-items: center;     /* Center-align items to manage smaller width */
+      justify-content: center; /* Center content vertically and horizontally */
+  }
+
+  .image-container, .image-container-reverse {
+      flex: none;             /* Override the flex setting */
+      width: 100%;            /* Make the image containers take full width */
+      margin-right: 0;        /* Remove negative margins that could cause overflow */
+      align-self: center;     /* Center align self for better visual alignment */
+  }
+
+  .text-container, .text-container-reverse {
+      flex: none;             /* Override the flex setting */
+      width: 100%;            /* Make text containers take full width */
+      padding: 10px;          /* Adjust padding to ensure content is not too cramped */
+      margin-left: 0;
+      margin-right: 0;
+      align-self: center;     /* Center align self for consistent layout */
+  }
 }
   
 
