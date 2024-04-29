@@ -29,11 +29,11 @@ body {
 
 /* about me section */
 .special-imaget {
-  width: 25%; /* Adjust the width as needed */
-  height: auto; /* This ensures the aspect ratio is maintained */
+  width: 25%; 
+  height: auto; 
   display: block;
   margin-left: auto;
-  margin-right: auto; /* Centers the image if needed */
+  margin-right: auto; 
 }
 
 /* design manifesto & design questions*/
@@ -76,42 +76,42 @@ body {
 
 
 img {
-  max-width: 100%; /* ensures images are never wider than their container */
-  height: auto;    /* maintains the aspect ratio of the images */
-  display: block;  /* removes additional space below the image */
+  max-width: 100%; 
+  height: auto;    
+  display: block;  
 }
 
 .special-image {
-  width: 50%; /* Adjust the width as needed */
-  height: auto; /* This ensures the aspect ratio is maintained */
+  width: 50%; 
+  height: auto; 
   display: block;
   margin-left: auto;
-  margin-right: auto; /* Centers the image if needed */
+  margin-right: auto;
 }
 
 /* porfolio section */
 
 .flex-container {
     display: flex;
-    align-items: flex-start; /* Aligns items to the top of the container */
-    justify-content:space-around /* Spreads the items across the horizontal space of the container */
+    align-items: flex-start; 
+    justify-content:space-around 
 }
 
 
 .image-container {
-    flex: 2; /* Takes up 1 portion of the available space */
+    flex: 2; 
     align-self: center;
 
 }
 
 .image-container-special {
-  flex: 0.8; /* Takes up 1 portion of the available space */
+  flex: 0.8; 
   align-self: center;
 }
 
 .text-container {
-    flex: 1; /* Takes up 2 portions of the available space, making it larger than the image container */
-    padding: 20px; /* Adds padding inside the text container */
+    flex: 1; 
+    padding: 20px; 
     margin-left: 100px;
 }
 
@@ -122,15 +122,15 @@ img {
 }
 
 .image-container-reverse {
-  flex: 2; /* Takes up 1 portion of the available space */
+  flex: 2; 
   align-self: center;
   margin-right: -10%;
   margin-left: 0px;
 }
 
 .text-container-reverse {
-  flex: 1; /* Takes up 2 portions of the available space, making it larger than the image container */
-  padding: 20px; /* Adds padding inside the text container */
+  flex: 1; 
+  padding: 20px; 
   align-self: center;
 }
 
@@ -154,96 +154,96 @@ img {
 
 .portfolio-item {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap onto the next line */
-  justify-content: space-between; /* Ensures that items are spaced evenly */
+  flex-wrap: wrap; 
+  justify-content: space-between; 
   padding: 20px;
-  align-items: stretch; /* Makes sure all items stretch to fill the container */
+  align-items: stretch; 
   margin-left: 15%;
   margin-right: 15%;
 }
 
 .portfolio-item .item {
-  flex: 1 1 48%; /* Allows the item to grow and shrink but base it on 48% of the container */
-  text-align: center; /* Centers the text below the image */
-  margin: 1%; /* Adds space around each item */
+  flex: 1 1 48%; 
+  text-align: center; 
+  margin: 1%; 
   display: flex;
-  flex-direction: column; /* Organizes content in a vertical layout */
+  flex-direction: column; 
 }
 
 .portfolio-item .item img {
-  width: 100%; /* Makes the image fill the container */
-  height: auto; /* Keeps the image aspect ratio intact */
-  margin-bottom: 10px; /* Space between the image and the text */
+  width: 100%; 
+  height: auto; 
+  margin-bottom: 10px; 
 }
 
 .portfolio-item .item p {
-  margin-top: auto; /* Pushes the text to the bottom if there's space available */
-  text-align: center; /* Center-aligns the text */
+  margin-top: auto; 
+  text-align: center; 
 }
 
 
 #about {
-  background-color: #000; /* Black background */
-  font-family: 'Press Start 2P', monospace; /* Pixelated font */
-  text-align: center; /* Center-align the text */
-  padding: 20px; /* Padding inside the section */
+  background-color: #000;
+  font-family: 'Press Start 2P', monospace; 
+  text-align: center;
+  padding: 20px; 
 }
 
 #about h2 {
-  color: #33C3F0; /* Light blue color */
+  color: #33C3F0; 
 }
 
 .about-content {
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Space between the text blocks */
-  margin: 50px 100px; /* Margin around the content */
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 100px;
 }
 
 .about-content .text {
-  flex: 1; /* Flex grow to fill the space */
-  margin: 0 20px; /* Margin for spacing */
-  color: #EAE075; /* Yellowish text color */
-  background-color: #222; /* Dark background for text */
-  padding: 10px; /* Padding inside text blocks */
-  box-sizing: border-box; /* Include padding in the width */
+  flex: 1;
+  margin: 0 20px;
+  color: #EAE075;
+  background-color: #222;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .about-content .text.left {
-  text-align: left; /* Align left text to the left */
+  text-align: left;
   color: #fff;
   font-size: 20px;
 }
 
 .about-content .text.right {
-  text-align: center; /* Align right text to the right */
+  text-align: center;
 }
 
 .button {
-  display: block; /* Block display to fill the width */
-  width: max-content; /* Max content for intrinsic width */
-  margin: 10px auto; /* Center the button horizontally */
+  display: block;
+  width: max-content;
+  margin: 10px auto;
   background-color: #cd03ff; 
   color: #fff;
   border: none;
   padding: 10px;
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
   cursor: pointer;
 }
 
 #about .button {
-  display: block; /* Block display to fill the width */
-  width: max-content; /* Max content for intrinsic width */
-  margin: 10px auto; /* Center the button horizontally */
+  display: block;
+  width: max-content;
+  margin: 10px auto;
   background-color: #cd03ff; 
   color: #fff;
   border: none;
   padding: 10px;
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
   cursor: pointer;
 }
 
 #about .button:hover {
-  background-color: #0056b3; /* Darken button on hover */
+  background-color: #0056b3; 
 }
 
 
@@ -298,7 +298,7 @@ img {
  
   @media (max-width: 768px) {
     img {
-      width: 100%; /* makes every image take full width of its container on small screens */
+      width: 100%; 
     }
 
     body, .text {
@@ -334,29 +334,33 @@ img {
     }
 
     .flex-container, .flex-container-reverse {
-      flex-direction: column;  /* Stack the flex items vertically on smaller screens */
-      align-items: center;     /* Center-align items to manage smaller width */
-      justify-content: center; /* Center content vertically and horizontally */
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center;
   }
 
   .image-container, .image-container-reverse {
-      flex: none;             /* Override the flex setting */
-      width: 100%;            /* Make the image containers take full width */
-      margin-right: 0;        /* Remove negative margins that could cause overflow */
-      align-self: center;     /* Center align self for better visual alignment */
+      flex: none;    
+      width: 100%;           
+      margin-right: 0;        
+      align-self: center;    
   }
 
   .text-container, .text-container-reverse {
-      flex: none;             /* Override the flex setting */
-      width: 100%;            /* Make text containers take full width */
-      padding: 10px;          /* Adjust padding to ensure content is not too cramped */
+      flex: none;       
+      width: 100%;     
+      padding: 10px;     
       margin-left: 0;
       margin-right: 0;
-      align-self: center;     /* Center align self for consistent layout */
+      align-self: center;  
   }
 
   .special-image {
-    width: 75%; /* Larger or smaller depending on your design needs */
+    width: 75%; 
+  }
+
+  .special-imaget {
+    width: 75%; 
   }
 }
   
