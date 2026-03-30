@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Redirect any direct URL (e.g. /about) to the hash-based equivalent (/#/about)
+      // so GitHub Pages 404s are gracefully handled by the React SPA.
+      const path = window.location.pathname;
+      window.location.replace(`/#${path}`);
+    </script>
+  </head>
+  <body></body>
+</html>
